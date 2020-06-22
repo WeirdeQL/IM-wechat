@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8F8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/weirdo_chat_in">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/weirdo_link_out">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/weirdo_find_out">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/weirdo_mine_out">
+
+        </ImageButton>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
